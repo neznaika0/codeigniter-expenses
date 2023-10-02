@@ -1,0 +1,30 @@
+html {
+    background-color:  #caffff;
+}
+
+body {
+    background-image: linear-gradient(#00ffdb, #caffff) !important;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: var(--bs-body-bg);
+    margin-top: .25rem !important;
+    margin-bottom: .25rem !important;
+}
+
+#app__expenses footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#app__expenses header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}

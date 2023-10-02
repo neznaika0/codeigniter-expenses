@@ -1,0 +1,41 @@
+{
+    "name": "neznaika0/codeigniter-expenses",
+    "description": "CodeIgniter Expenses",
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://expenses.ozornick.ru",
+    "support": {
+        "source": "https://github.com/neznaika0/codeigniter-expenses"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0",
+        "codeigniter4/translations": "^4.4",
+        "twbs/bootstrap": "5.3.1"
+    },
+    "require-dev": {
+        "codeigniter/coding-standard": "^1.5",
+        "fakerphp/faker": "^1.9",
+        "friendsofphp/php-cs-fixer": "^3.26",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
