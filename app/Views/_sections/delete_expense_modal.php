@@ -11,7 +11,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?= lang('App.button.close'); ?></button>
                 <?= form_open(url_to('expenses.delete')); ?>
-                    <?= form_hidden('id', $id); ?>
+                    <?= form_hidden('id', (string) $id); ?>
                     <?= form_submit([
                         'name'  => 'deleteExpense',
                         'class' => 'btn btn-danger',

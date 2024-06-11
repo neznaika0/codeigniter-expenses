@@ -8,19 +8,22 @@
         "source": "https://github.com/neznaika0/codeigniter-expenses"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
-        "codeigniter4/framework": "^4.0",
-        "codeigniter4/translations": "^4.4",
+        "php": "^8.1",
+        "codeigniter4/framework": "^4.5.2",
+        "codeigniter4/translations": "^4.5.1",
         "twbs/bootstrap": "5.3.1"
     },
     "require-dev": {
-        "codeigniter/coding-standard": "^1.5",
-        "fakerphp/faker": "^1.9",
-        "friendsofphp/php-cs-fixer": "^3.26",
-        "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.1"
+        "codeigniter/coding-standard": "^1.7.16",
+        "fakerphp/faker": "^1.23.1",
+        "friendsofphp/php-cs-fixer": "^3.58.1",
+        "mikey179/vfsstream": "^1.6.11",
+        "phpunit/phpunit": "^9.6.19"
     },
     "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
         "exclude-from-classmap": [
             "**/Database/Migrations/**"
         ]

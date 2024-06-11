@@ -16,8 +16,8 @@ class Security extends BaseController
             return redirect('expenses.list');
         }
 
-        if ($this->request->getMethod() === 'post') {
-            $password = trim($this->request->getPost('password'));
+        if ($this->request->getMethod() === 'POST') {
+            $password = trim((string)$this->request->getPost('password'));
 
             if ($password === '') {
                 return redirect('login')->with('validation', ['password' => lang('Guard.incorrect_password')]);
